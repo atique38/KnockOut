@@ -25,7 +25,7 @@ class Automa:
         return curr_score
 
     def calculate_score(self, depth) -> float | int:
-       
+
         # Victories outweigh other possible scores, but earlier victories are better
         if self.board.p2_score == 2:
             return 100 + depth
